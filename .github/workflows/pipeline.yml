@@ -1,15 +1,8 @@
-# Nome do Workflow
-name: DevOpsLab Pipeline
-
-# Evento que irá acionar a pipeline
+name: My Pipeline
 on:
   push:
     branches:
       - main
-
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Download do Repositório
-        uses: actions/checkout@v3       # https://github.com/actions/checkout
